@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
+            document.body.classList.toggle('menu-open'); // ADD THIS
+
     });
     
     // Close mobile menu when clicking on a link
@@ -14,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', () => {
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
+                    document.body.classList.remove('menu-open'); // ADD THIS
+
         });
     });
     
@@ -376,3 +380,5 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('Whatsapp4u website initialized successfully!');
 });
+
+
