@@ -1,0 +1,44 @@
+# HAMBURGER MENU UPDATE FOR SMALL DEVICES
+
+## Files Updated:
+
+### 1. index.html
+- Uncommented the hamburger menu div in the navbar section
+- Added script tag to include navbar.js
+
+### 2. navbar.js (NEW FILE)
+- Complete JavaScript functionality for hamburger menu
+- Toggles menu on click
+- Closes menu when clicking on navigation links
+- Closes menu when clicking outside
+- Closes menu on window resize (desktop mode)
+- Closes menu on Escape key press
+
+### 3. styles.css
+- Updated hamburger CSS with animation
+- Added hamburger active states (X animation)
+- Improved mobile menu styles
+- Added hover effects on mobile menu items
+- Enhanced responsive breakpoints
+
+## Features:
+✅ Hamburger menu appears on small devices (max-width: 768px)
+✅ Smooth animation when opening/closing
+✅ Menu slides in from the left
+✅ Click hamburger to toggle menu
+✅ Click any nav link to close menu
+✅ Click outside menu to close it
+✅ Press Escape key to close menu
+✅ Body scroll locked when menu is open
+✅ Responsive design for all screen sizes
+
+## How it works:
+1. On desktop: Normal horizontal navbar
+2. On tablet/mobile: Hamburger icon appears
+3. Click hamburger: Full-screen menu slides in
+4. Click link/outside/escape: Menu closes with smooth animation
+
+## Files to upload:
+1. index.html
+2. navbar.js
+3. styles.css

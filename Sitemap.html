@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitemap - Whatsapp4u</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="./Whatsapp4u-tab-logo.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* EXACT PRIVACY THEME - PERFECT ICON STYLES */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+        color: #334155;
+        background: #f8fafc;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      .policy-hero {
+        padding: 40px 0;
+      }
+      .policy-header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .section-badge {
+        background: linear-gradient(135deg, #007ba7, #fe5a1d);
+        color: white;
+        padding: 8px 24px;
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 12px rgba(0, 123, 167, 0.3);
+      }
+      .section-title {
+        font-size: 32px;
+        font-weight: 700;
+        color: #1e293b;
+        margin-bottom: 15px;
+      }
+      .divider {
+        width: 70px;
+        height: 4px;
+        background: linear-gradient(135deg, #007ba7, #fe5a1d);
+        margin: 0 auto 20px;
+        border-radius: 2px;
+      }
+      .sitemap-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        margin-top: 40px;
+      }
+
+      /* PERFECT SITEMAP CARD */
+      .sitemap-card {
+        background: white;
+        padding: 30px;
+        border-radius: 16px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        border-left: 5px solid #007ba7;
+        transition: all 0.3s ease;
+        height: 100%;
+      }
+      .sitemap-card:hover {
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        transform: translateY(-5px);
+        border-left-color: #fe5a1d;
+      }
+
+      /* PERFECT HEADING ICONS */
+      .sitemap-card h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #1e293b;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .sitemap-card h3 i {
+        font-size: 24px;
+        width: 32px;
+        text-align: center;
+        background: linear-gradient(135deg, #007ba7 0%, #fe5a1d 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0 2px 6px rgba(0, 123, 167, 0.3));
+      }
+
+      /* LIST ICONS - PERFECT STYLING */
+      .sitemap-card ul {
+        list-style: none;
+        padding: 0;
+      }
+      .sitemap-card li {
+        padding: 12px 0 12px 35px;
+        position: relative;
+        font-size: 16px;
+        color: #475569;
+        border-bottom: 1px solid #f1f5f9;
+        transition: all 0.2s ease;
+      }
+      .sitemap-card li:last-child {
+        border-bottom: none;
+      }
+
+      /* INLINE ICONS IN LINKS - PERFECT SPACING */
+      .sitemap-card li a {
+        color: #475569;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: all 0.2s ease;
+        font-weight: 500;
+      }
+      .sitemap-card li a i {
+        font-size: 16px;
+        width: 20px;
+        text-align: center;
+        color: #007ba7;
+        font-weight: 600;
+        transition: all 0.2s ease;
+      }
+      .sitemap-card li:hover {
+        background: #f8fafc;
+        padding-left: 40px;
+      }
+      .sitemap-card li:hover a {
+        color: #007ba7;
+      }
+      .sitemap-card li:hover a i {
+        color: #fe5a1d;
+        transform: scale(1.1);
+      }
+
+      /* CONTACT CARD */
+      .contact-card {
+        text-align: center;
+        background: white;
+        border-left: 5px solid #007ba7;
+        border-radius: 16px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        color: #475569;
+        padding: 35px;
+        border-radius: 16px;
+        /* box-shadow: 0 10px 30px rgba(0, 123, 167, 0.3); */
+      }
+      .contact-card h3 {
+        color: #1e293b;
+        margin-bottom: 20px;
+        font-size: 22px;
+      }
+      .contact-card h3 i {
+        color: white !important;
+        background: rgba(255, 255, 255, 0.2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .btn-whatsapp {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 28px;
+        background: #25d366;
+        color: white !important;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 16px;
+        box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        transition: all 0.3s ease;
+        margin-top: 15px;
+      }
+      .btn-whatsapp:hover {
+        background: #20ba5a;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
+      }
+
+      .back-to-home-section {
+        text-align: center;
+        margin-top: 50px;
+        padding: 30px 0;
+      }
+      .back-home-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 28px;
+        background: #6b7280;
+        color: white;
+
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 16px;
+        box-shadow: 0 4px 15px rgba(107, 114, 128, 0.3);
+        transition: all 0.3s ease;
+      }
+      .back-home-btn:hover {
+        background: #4b5563;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(107, 114, 128, 0.4);
+      }
+
+      /* RESPONSIVE PERFECTION */
+      @media (max-width: 768px) {
+        .sitemap-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        .sitemap-card {
+          padding: 25px;
+        }
+        .btn-whatsapp,
+        .back-home-btn {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+      @media (max-width: 480px) {
+        .section-title {
+          font-size: 26px;
+        }
+        .sitemap-card li {
+          padding-left: 30px;
+          font-size: 15px;
+        }
+      }
+      @media (min-width: 769px) {
+        .sitemap-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="policy-hero">
+      <div class="container">
+        <div class="policy-header">
+          <h3 class="section-badge">Sitemap</h3>
+          <h2 class="section-title">Complete Site Navigation</h2>
+          <div class="divider"></div>
+          <p style="color: #64748b; font-size: 15px; font-weight: 500">
+            All Pages & Sections - Updated Jan 2026
+          </p>
+        </div>
+
+        <div class="sitemap-grid">
+          <!-- MAIN NAVIGATION -->
+          <div class="sitemap-card">
+            <h3><i class="fas fa-home"></i> Main Navigation</h3>
+            <ul>
+              <li>
+                <a href="index.html#home"><i class="fas fa-globe"></i> Home</a>
+              </li>
+              <li>
+                <a href="index.html#about"
+                  ><i class="fas fa-info-circle"></i> About Us</a
+                >
+              </li>
+              <li>
+                <a href="index.html#why-choose"
+                  ><i class="fas fa-star"></i> Why Choose Us</a
+                >
+              </li>
+              <li>
+                <a href="index.html#Our Products"
+                  ><i class="fas fa-box"></i> Our Products</a
+                >
+              </li>
+              <li>
+                <a href="index.html#contact"
+                  ><i class="fas fa-envelope"></i> Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- PRODUCTS - YOUR EXACT STRUCTURE WITH PERFECT ICONS -->
+          <div class="sitemap-card">
+            <h3><i class="fas fa-box-open"></i> Our Products</h3>
+            <ul>
+              <li>
+                <a href="index.html#Our Products"
+                  ><i class="fas fa-map-marker-alt"></i> Vehicame (GPS
+                  Tracking)</a
+                >
+              </li>
+              <li>
+                <a href="index.html#Our Products"
+                  ><i class="fas fa-mobile-alt"></i> Almodesk (Attendance)</a
+                >
+              </li>
+              <li>
+                <a href="index.html#Our Products"
+                  ><i class="fas fa-heart"></i> Marryme Matrimony</a
+                >
+              </li>
+              <li>
+                <a href="index.html#Our Products"
+                  ><i class="fas fa-database"></i> Database Solutions</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- LEGAL PAGES - YOUR EXACT STRUCTURE */
+        <div class="sitemap-card">
+          <h3><i class="fas fa-file-contract"></i> Legal Pages</h3>
+          <ul>
+            <li><a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+            <li><a href="terms.html"><i class="fas fa-file-signature"></i> Terms of Service</a></li>
+            <li><a href="sitemap.html"><i class="fas fa-sitemap"></i> Sitemap</a></li>
+          </ul>
+        </div>
+
+        CONTACT -->
+          <div class="contact-card">
+            <h3><i class="fas fa-phone"></i> Contact Info</h3>
+            <p>Reach us anytime for support</p>
+            <a
+              href="https://api.whatsapp.com/send?phone=919500941142&text=Hi%20Whatsapp4u%20Team"
+              class="btn-whatsapp"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i> Contact Us Now
+            </a>
+            <p style="margin-top: 15px; opacity: 0.9; font-size: 14px">
+              +91 9500941142 | Karaikudi, Tamil Nadu
+            </p>
+          </div>
+        </div>
+
+        <div class="back-to-home-section">
+          <a href="index.html" class="back-home-btn">
+            <i class="fas fa-home"></i> Back to Home
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
