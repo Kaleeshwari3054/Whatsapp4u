@@ -51,8 +51,8 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    width: 100%;
+    padding: 10px 10px;
+    /* width: 100%; */
     max-width: 100%;
 }
 
@@ -92,6 +92,7 @@ html {
     align-items: center;
     gap: 20px;
     flex-shrink: 0;
+   padding-right: 20px;
 }
 
 .nav-list {
@@ -110,6 +111,7 @@ html {
     position: relative;
     font-size: 15px;
     white-space: nowrap;
+  
 }
 
 .nav-link::after {
@@ -183,6 +185,57 @@ html {
 
 .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px);
+}
+/* NAV ACTIONS CONTAINER */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+/* PERFECT CALL BUTTON */
+.call-btn {
+  background: linear-gradient(45deg, #ff6b35, #f7931e);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 15px rgba(255,107,53,0.4);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  border: none;
+}
+
+.call-btn i {
+  font-size: 16px;
+}
+
+.call-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255,107,53,0.5);
+  color: white;
+  text-decoration: none;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .call-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+    width: 140px;
+    justify-content: center;
+  }
 }
 
 /* Hero Section */
